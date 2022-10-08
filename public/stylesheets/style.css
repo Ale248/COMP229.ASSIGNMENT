@@ -22,3 +22,7 @@ tr {
   vertical-align: middle;
   text-align: center;
 }
+
+label {
+  margin-bottom: 5px;
+}
