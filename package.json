@@ -1,0 +1,32 @@
+{
+  "name": "comp229.assignment1",
+  "version": "1.0.0",
+  "description": "Assignment 1",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ale248/COMP229.ASSIGNMENT1.git"
+  },
+  "keywords": [
+    "COMP229",
+    "Assignment1"
+  ],
+  "author": "Alejandro Akifarry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ale248/COMP229.ASSIGNMENT1/issues"
+  },
+  "homepage": "https://github.com/Ale248/COMP229.ASSIGNMENT1#readme",
+  "private": true,
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+}
