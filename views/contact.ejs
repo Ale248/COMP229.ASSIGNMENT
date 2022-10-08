@@ -1,0 +1,47 @@
+<!--
+    Filename: contact.ejs
+    Author: Alejandro Akifarry
+    SID: 301-195-788
+    Date: Oct 8, 2022
+-->
+
+<% include partials/header.ejs %>
+    <!-- Bootstrap 5 Grid system -->
+    <div class="container-fluid p-3 row">
+        <div class="col-sm-2 border rounded text-center p-3 align-self-center bg-light">
+            <h4>Alejandro Akifarry</h4>
+            <p class="lh-lg">
+                +1(437)971-8973<br>
+                alejandro291097@yahoo.com
+            </p>
+        </div>
+        <!-- Form with Bootstrap 5 -->
+        <div class="col-sm-10 p-5">
+            <form action="/">
+                <div class="mb-3 mt-3">
+                  <label for="first">First Name:</label>
+                  <input class="form-control" id="first" placeholder="Enter first name" name="first">
+                </div>
+                <div class="mb-3">
+                    <label for="last">Last Name:</label>
+                    <input class="form-control" id="last" placeholder="Enter last name" name="last">
+                </div>
+                <div class="mb-3">
+                    <label for="last">Contact Number:</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter contact number" name="phone">
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" rows="5" id="message" placeholder="Enter message" name="text"></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
+        </div>
+    </div>
+
+
+<% include partials/footer.ejs %>
