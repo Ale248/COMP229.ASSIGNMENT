@@ -1,27 +1,34 @@
+/**
+ * Filename: index.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 8, 2022
+ */
+
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET Home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Welcome!' });
+  res.render('index', { title: 'Home' });
 });
 
-// Projects page
+/* GET Projects page. */
 router.get('/projects', function(req, res, next) {
   res.render('projects', { title: 'Projects' });
 });
 
-// Services page
+/* GET Services page. */
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'Services' });
 });
 
-// About me page
+/* GET About Me page. */
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About Me' });
 });
 
-// Contact page
+/* GET Contact page. */
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });

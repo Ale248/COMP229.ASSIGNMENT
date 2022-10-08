@@ -1,6 +1,16 @@
+/**
+ * Filename: style.css
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 8, 2022
+ */
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+  /* Linear gradient (degree, starting at light grey, taking the rest of the 100% length to dark grey) */
+  background: linear-gradient(318deg, rgba(227,227,227,1) 0%, rgba(126,126,126,1) 100%); 
 }
 
 a {
@@ -9,8 +19,6 @@ a {
 
 .nav-item {
   font: 22px "Lucida Grande", Helvetica, Arial, sans-serif;
-  /* padding-left: 50px;
-  padding-right: 50px; */
 }
 
 main {
