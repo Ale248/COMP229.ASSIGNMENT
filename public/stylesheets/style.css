@@ -20,4 +20,5 @@ main {
 tr {
   height: 50px;
   vertical-align: middle;
+  text-align: center;
 }
