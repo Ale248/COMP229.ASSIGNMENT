@@ -1,0 +1,42 @@
+<% include partials/header.ejs %>
+<h1><%= title %></h1>
+<div class="container-fluid p-5 my-5">
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+              <th style="width: 20%">Project name</th>
+              <th style="width: 50%">Description</th>
+              <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>This very website!</td>
+            <td>
+                This website is very much still under progress and will be improved as time goes on. 
+                It's a project for an assignment for the class COMP229 that I am currently working on. 
+                It uses the ExpressJS as well as Bootstrap 5 for the styles! The outcome of this project is
+                to become my main portfolio website to show to the recruiters!
+            </td>
+            <td><img src="/images/website_ss.png" style="width: 100%"></td>
+          </tr>
+          <tr>
+            <td>Pop The Balloon Game</td>
+            <td>
+                A game where you pop as many balloons as you can under a time limit! I made it with Python, specifically the pygame
+                module using the PyCharm IDE. I learned how to make the UI for the menu as well as a slide bar
+                for the volume in the settings menu. The outcome of this project is to learn more and experiment
+                for myself what Python can do!
+            </td>
+            <td><img src="/images/pop_ss.png" style="width: 100%"></td>
+          </tr>
+          <tr>
+            <td>Bill Calculator/Helper</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<% include partials/footer.ejs %>
