@@ -11,6 +11,7 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
   </head>
   <body>
     <!-- Navbar with Bootstrap 5 -->
@@ -23,38 +24,63 @@
 
           <li class="nav-item d-flex align-items-center p-4">
             <% if(title == "Home"){  %>
-              <a class="nav-link active" href="/">Home</a>
+              <a class="nav-link active" href="/">
             <% } else { %>  
-              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link" href="/">
             <% } %>
+            <i class="fa-solid fa-house"></i>
+                Home
+            </a>
           </li>
           <li class="nav-item d-flex align-items-center p-4">
             <% if(title == "Projects"){  %>
-              <a class="nav-link active" href="/projects">Projects</a>
+              <a class="nav-link active" href="/projects">
             <% } else { %>  
-              <a class="nav-link" href="/projects">Projects</a>
+              <a class="nav-link" href="/projects">
             <% } %>
+            <i class="fa-solid fa-folder"></i>
+              Projects
+            </a>
           </li>
           <li class="nav-item d-flex align-items-center p-4">
             <% if(title == "Services"){  %>
-              <a class="nav-link active" href="/services">Services</a>
+              <a class="nav-link active" href="/services">
             <% } else { %>  
-              <a class="nav-link" href="/services">Services</a>
+              <a class="nav-link" href="/services">
             <% } %>
+            <i class="fa-solid fa-bell-concierge"></i>
+              Services
+            </a>
           </li>
           <li class="nav-item d-flex align-items-center p-4">
             <% if(title == "About Me"){  %>
-              <a class="nav-link active" href="/about">About Me</a>
+              <a class="nav-link active" href="/about">
             <% } else { %>  
-              <a class="nav-link" href="/about">About Me</a>
+              <a class="nav-link" href="/about">
             <% } %>
+            <i class="fa-solid fa-address-card"></i>
+            About Me
+            </a>
           </li>
           <li class="nav-item d-flex align-items-center p-4">
             <% if(title == "Contact"){  %>
-              <a class="nav-link active" href="/contact">Contact</a>
+              <a class="nav-link active" href="/contact">
             <% } else { %>  
-              <a class="nav-link" href="/contact">Contact</a>
+              <a class="nav-link" href="/contact">
             <% } %>
+            <i class="fa-solid fa-phone"></i>
+              Contact Me
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center p-4">
+            <% if(title == "Contact List"){  %>
+              <a class="nav-link active" href="/contacts/list">
+            <% } else { %>  
+              <a class="nav-link" href="/contacts/list">
+            <% } %>
+            <i class="fa-solid fa-list-ul"></i>
+              Contact List
+            </a>
           </li>
 
         </ul>

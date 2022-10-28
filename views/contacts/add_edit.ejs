@@ -1,0 +1,72 @@
+<%- include ../partials/header.ejs %>
+
+<!-- Content for the Add_Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <input type="hidden"
+                        name="id"
+                        value="<%= item._id %>"
+                    >
+                    <label for="firstTextField">First Name</label>
+                    <input type="text" class="form-control"
+                        id="firstTextField"
+                        placeholder="Enter the First Name"
+                        name="firstName" 
+                        value="<%= item.firstName %>"
+                        required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="lastTextField">Last Name</label>
+                    <input type="text" class="form-control"
+                    id="lastTextField"
+                    placeholder="Enter the Last Name"
+                    name="lastName" 
+                    value="<%= item.lastName %>"
+                    required>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="numTextField">Contact Number</label>
+                    <input type="number" class="form-control"
+                    id="numTextField"
+                    placeholder="Enter the Contact Number"
+                    name="number" 
+                    value="<%= item.number %>"
+                    >
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="emailTextField">E-mail</label>
+                    <input type="email" class="form-control"
+                    id="emailTextField"
+                    placeholder="Enter the E-mail"
+                    name="email" 
+                    value="<%= item.email %>"
+                    required>
+                </div>            
+                <br />
+                <br/>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i> 
+                    Submit
+                </button>
+                
+                <a href="/contacts/list" class="btn btn-warning">
+                    <i class="fa-solid fa-xmark"></i>
+                    Cancel
+                </a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<%- include ../partials/footer.ejs %>
