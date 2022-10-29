@@ -4,14 +4,18 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var dbConfig = require('./config/db');
+var app = require('./config/app');
 var debug = require('debug')('comp229.assignment1:server');
 var http = require('http');
+const configurePassport = require('./config/passport');
 
 /**
  * Get port from environment and store in Express.
+ * Also connects to MongoDB server
  */
 
+var db = dbConfig();
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
@@ -23,8 +27,9 @@ var server = http.createServer(app);
 
 /**
  * Listen on provided port, on all network interfaces.
+ * Also set up passport
  */
-
+const passport = configurePassport();
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -87,4 +92,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log(`App listening on  http://localhost:${port}`)
 }
