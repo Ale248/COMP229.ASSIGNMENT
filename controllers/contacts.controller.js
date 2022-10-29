@@ -69,7 +69,7 @@ module.exports.displayAddPage = (req, res, next) => {
     res.render('contacts/add_edit', {
         title: 'Add a new Contact',
         item: newItem
-    })          
+    });          
 }
 
 module.exports.processAddPage = (req, res, next) => {
