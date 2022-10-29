@@ -1,3 +1,9 @@
+/**
+ * Filename: db.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
 let atlasdb = "mongodb+srv://dbuser:D1E0WgJVUer0hldI@cluster005.hyd2sxj.mongodb.net/comp229?retryWrites=true&w=majority";
 
 let mongoose = require('mongoose');

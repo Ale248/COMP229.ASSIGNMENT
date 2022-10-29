@@ -1,3 +1,10 @@
+/**
+ * Filename: local.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/user.model');

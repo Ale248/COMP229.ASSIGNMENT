@@ -1,3 +1,10 @@
+/**
+ * Filename: passport.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 const passport = require('passport');
 const User = require('../models/user.model');
 

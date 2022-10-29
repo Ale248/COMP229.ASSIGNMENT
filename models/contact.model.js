@@ -1,3 +1,10 @@
+/**
+ * Filename: contact.model.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 let mongoose = require('mongoose');
 
 // Create a model class

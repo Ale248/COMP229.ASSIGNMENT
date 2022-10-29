@@ -1,3 +1,10 @@
+/**
+ * Filename: appclient.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 if(getTitle == "Contact List")
 {
     let deleteButtons = document.querySelectorAll('.btn-danger');

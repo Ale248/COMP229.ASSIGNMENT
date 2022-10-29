@@ -1,3 +1,10 @@
+/**
+ * Filename: contacts.controller.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 let Contacts = require('../models/contact.model');
 
 exports.contactList = function(req, res, next) {

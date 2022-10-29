@@ -1,3 +1,10 @@
+/**
+ * Filename: users.controller.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 let User = require('../models/user.model');
 let passport = require('passport');
 

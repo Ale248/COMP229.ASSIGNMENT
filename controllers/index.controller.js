@@ -1,3 +1,10 @@
+/**
+ * Filename: index.controller.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 exports.home = function(req, res, next) {
     res.render('index', 
     { title: 'Home',

@@ -1,3 +1,10 @@
+/**
+ * Filename: users.router.js
+ * Author: Alejandro Akifarry
+ * SID: 301-195-788
+ * Date: Oct 29, 2022
+ */
+
 let express = require('express');
 let router = express.Router();
 let usersController = require('../controllers/users.controller');
