@@ -7,7 +7,8 @@ exports.contactList = function(req, res, next) {
         } else {
             res.render('contacts/list', {
                 title: 'Contact List',
-                ContactList: contactList
+                ContactList: contactList,
+                userName: req.user ? req.user.username : ''
             })
         }
     });
@@ -27,7 +28,8 @@ exports.displayEditPage = (req, res, next) => {
             //show the edit view
             res.render('contacts/add_edit', {
                 title: 'Edit Item', 
-                item: itemToEdit
+                item: itemToEdit,
+                userName: req.user ? req.user.username : ''
             })
         }
     });
@@ -65,7 +67,7 @@ module.exports.displayAddPage = (req, res, next) => {
     let newItem = Contacts();
 
     res.render('contacts/add_edit', {
-        title: 'Add a new Item',
+        title: 'Add a new Contact',
         item: newItem
     })          
 }

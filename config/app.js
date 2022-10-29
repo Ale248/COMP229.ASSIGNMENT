@@ -11,10 +11,21 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+let session = require('express-session');
+let passport = require('passport');
+let flash = require('connect-flash');
+
 var indexRouter = require('../routes/index');
 var contactsRouter = require('../routes/contacts.router');
+var usersRouter = require('../routes/users.router');
 
 var app = express();
+
+app.use(session({
+  saveUninitialized: true,
+  resave: true,
+  secret: "sessionSecret"
+}));
 
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
@@ -27,9 +38,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
 
+// Sets up passport
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+
 // routes
 app.use('/', indexRouter);
 app.use('/contacts', contactsRouter);
+app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
